@@ -84,6 +84,20 @@ body {
     --color-input-bg: white;
     --input-border: #e5e7eb;
     --outer-color: #4361EE;
+    --hover-color: #EBEBEB;
+    --active-hover-color: #f8f4f4;
+    --aside-heading-bg: #F6F7FA;
+    --text-color: #0E1726;
+    --text-hover: #0E1726;
+    --aside-heading-color: #0e1726;
+    --dsc-color: #0E1726;
+    --dollor-bg: #FFECCB;
+    --dollor-color: #E2A03F;
+    --cart-icon-color: #00AB55;
+    --cart-bg-color: #DDF5F0;
+    --purple-bg: #ebe4f7;
+    --purple-icon: #8B6BCF;
+    --summary-line-bg: #EAEAEC;
 }
 
 .blck-theme {
@@ -107,6 +121,20 @@ body {
     --color-input-bg: #20273c;
     --input-border: #17263c;
     --outer-color: #4361EE;
+    --hover-color: #181F32;
+    --active-hover-color: #111827;
+    --aside-heading-bg: #121A2A;
+    --text-color: #506690;
+    --text-hover: #848CA8;
+    --aside-heading-color: #888EA8;
+    --dsc-color: #E0E6EDE6;
+    --dollor-bg: #E2A03F;
+    --dollor-color: #FFECCB;
+    --cart-icon-color: white;
+    --cart-bg-color: #00AB55;
+    --purple-bg: #805DCA;
+    --purple-icon: white;
+    --summary-line-bg: #1B2E4B;
 }
 
 .flex {
@@ -327,6 +355,11 @@ header {
     background-color: transparent;
 }
 
+.nav-btn span {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
 .nav-btn div i{
     color: var(--color-aside-sub);
     font-size: 18px;
@@ -336,8 +369,12 @@ header {
     color: var(--color-aside-main);
 }
 
+.nav-btn:hover span{
+    color: var(--text-hover);
+}
+
 .nav-btn:hover {
-    background-color: #EBEBEB;
+    background-color: var(--hover-color);
 }
 
 .nav-btn:hover svg {
@@ -349,7 +386,11 @@ header {
 }
 
 .selected {
-    background-color: #EBEBEB;
+    background-color: var(--hover-color);
+}
+
+.nav-btn.selected span{
+    color: var(--text-hover);
 }
 
 .active-menus a {
@@ -364,30 +405,44 @@ header {
     color: var(--outer-color);
 }
 
+.active-menus.closed a:hover {
+    color: var(--outer-color);
+    background-color: var(--active-hover-color);
+}
+
 .active-menus li:hover {
-    background-color: #f8f4f4;
+    background-color: var(--active-hover-color);
     border-radius: 5px;
 }
 
 .aside-menus-heading {
     padding: 6px 28px;
-    background-color: #F6F7FA;
+    background-color: var(--aside-heading-bg);
     margin: 5px 0;
 }
 
 .aside-menus-heading span{
     font-size: 14px;
+    color: var(--aside-heading-color);
 }
 
 .apps-item a{
     padding: 10px;
     display: block;
-    color: #191919;
+    /* color: #191919; */
+}
+
+.apps-item span{
+    color: var(--text-color);
 }
 
 .apps-item a:hover{
-    background-color: #EBEBEB;
+    background-color: var(--hover-color);
     border-radius: 5px;
+}
+
+.apps-item a:hover span{
+    color: var(--text-hover);
 }
 
 .apps-item a:hover svg{
@@ -418,3 +473,164 @@ header {
 .rotate {
     transform: rotate(90deg);
 }
+
+/* main body */
+
+.outer-body {
+    padding: 1.5rem;
+}
+
+.dashbord a{
+    color: var(--color-secondary);
+    font-size: 15px;
+    transition: var(--transition-main);
+}
+
+.dashbord a:hover{
+    text-decoration: underline;
+}
+
+.sales a{
+    color: var(--aside-heading-color);
+    font-size: 15px;
+}
+
+.sales span{
+    color: var(--aside-heading-color);
+    font-size: 15px;
+    margin-left: 8px;
+    margin-right: 3px;
+}
+
+.charts {
+    padding-top: 1.25rem;
+}
+
+.chart-heading {
+    margin-bottom: 1.25rem;
+}
+
+.chart-heading h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.dots {
+    width: 22px;
+    height: 22px;
+    color: var(--color-primary);
+    transition: var(--transition-main);
+    cursor: pointer;
+}
+
+.dots:hover {
+    color: var(--color-secondary);
+}
+
+.revenue-chart, .sales-chart, .daily-sales-chart, .order-chart, .summary-card {
+    padding: 1.25rem;
+    background-color: var(--color-header-bg);
+    height: 100%;
+    --tw-shadow: 5px 0 25px 0 #5e5c9a1a;
+    --tw-shadow-colored: 5px 0 25px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border-radius: 5px;
+}
+
+.daily-sales-chart, .order-chart, .summary-card {
+    margin-top: 25px;
+}
+
+.chart-dsc {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dsc-color);
+}
+
+.sales-dsc {
+    margin-bottom: 25px;
+}
+
+.chart-dsc span {
+    color: var(--color-secondary);
+    margin-left: 8px;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.pr-0 {
+    padding-right: 0;
+}
+
+.chart-heading div span {
+    font-size: 14px;
+    color: var(--color-lightgrey);
+}
+
+.dollor-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background-color: var(--dollor-bg);
+}
+
+.cart-icon {
+    width: 2.80rem;
+    height: 2.80rem;
+    border-radius: 10px;
+    background-color: var(--cart-bg-color);
+}
+
+.cart-icon i {
+    font-size: 22px;
+    color: var(--cart-icon-color);
+}
+
+.dollor-icon svg {
+    color: var(--dollor-color);
+}
+
+.order-dsc h4{
+    font-size: 25px;
+    text-align: right;
+    font-weight: 600;
+    color: var(--dsc-color);
+}
+
+.summary-info {
+    margin-top: 20px;
+}
+
+.income-data {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background-color: var(--purple-bg);
+    margin-right: 0.75rem;
+}
+
+.income-data svg {
+    color: var(--purple-icon);
+}
+
+.icome-line {
+    width: 100%;
+    height: .5rem;
+    /* background-color: #00AB55; */
+    margin-top: 8px;
+    border-radius: 50px;
+    background-color: var(--summary-line-bg);
+    
+}
+
+.icome-line div {
+    width: 90%;
+    height: 100%;
+    border-radius: 50px;
+    background: rgb(117,121,255);
+    background: linear-gradient(90deg, rgba(117,121,255,1) 0%, rgba(178,36,239,1) 100%);
+}
+
