@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/fonts/Nunito-font/stylesheet.css">
     <!-- Style CSS File -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Media Css -->
+    <link rel="stylesheet" href="./assets/css/media.css">
 
 </head>
 
@@ -695,7 +697,7 @@
                     </div>
                 </div>
                 <div class="flex gap-10 align-center">
-                    <div class="rounded-logo flex align-center justify-center">
+                    <div class="rounded-logo sun flex align-center justify-center">
                         <i class="ri-sun-line"></i>    
                     </div>
                     <div class="rounded-logo flex align-center justify-center">
@@ -715,15 +717,69 @@
                             <path d="M12 6V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
                         </svg>
                     </div>
-                    <div class="flex align-center justify-center">
-                        <img src="./assets/images/profile-main-logo.jpeg" alt="profile-logo" class="profile-logo">
+                    <div class="flex align-center justify-center profile-icon">
+                        <a href="javascript: void(0);" class="relative"><img src="./assets/images/profile-main-logo.jpeg" alt="profile-logo" class="profile-logo"></a>
+                        <ul class="grop-down display-none">
+                            <li>
+                                <div class="flex align-center gap-20">
+                                    <div>
+                                        <img src="./assets/images/profile-main-logo.jpeg" alt="logo" width="40px" height="40px">
+                                    </div>
+                                    <div class="name">
+                                        <h4>John Doe</h4>
+                                        <a href="javascript: void(0);">johndoe@gmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hover">
+                                <a href="javascript: void(0);" class="padding flex align-center">
+                                    <svg class="h-4.5 w-4.5 shrink-0 ltr:mr-2 rtl:ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="6" r="4" stroke="currentColor" stroke-width="1.5"></circle>
+                                        <path opacity="0.5" d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="currentColor" stroke-width="1.5"></path>
+                                    </svg>
+                                    Profile
+                                </a>
+                            </li>
+                            <li class="hover">
+                                <a href="javascript: void(0);" class="padding flex align-center">
+                                    <svg class="h-4.5 w-4.5 shrink-0 ltr:mr-2 rtl:ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.5" d="M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12Z" stroke="currentColor" stroke-width="1.5"></path>
+                                        <path d="M6 8L8.1589 9.79908C9.99553 11.3296 10.9139 12.0949 12 12.0949C13.0861 12.0949 14.0045 11.3296 15.8411 9.79908L18 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                    </svg>
+                                    Inbox
+                                </a>
+                            </li>
+                            <li class="hover">
+                                <a href="javascript: void(0);" class="padding flex align-center">
+                                    <svg class="h-4.5 w-4.5 shrink-0 ltr:mr-2 rtl:ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 16C2 13.1716 2 11.7574 2.87868 10.8787C3.75736 10 5.17157 10 8 10H16C18.8284 10 20.2426 10 21.1213 10.8787C22 11.7574 22 13.1716 22 16C22 18.8284 22 20.2426 21.1213 21.1213C20.2426 22 18.8284 22 16 22H8C5.17157 22 3.75736 22 2.87868 21.1213C2 20.2426 2 18.8284 2 16Z" stroke="currentColor" stroke-width="1.5"></path>
+                                        <path opacity="0.5" d="M6 10V8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                        <g opacity="0.5">
+                                            <path d="M9 16C9 16.5523 8.55228 17 8 17C7.44772 17 7 16.5523 7 16C7 15.4477 7.44772 15 8 15C8.55228 15 9 15.4477 9 16Z" fill="currentColor"></path>
+                                            <path d="M13 16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16C11 15.4477 11.4477 15 12 15C12.5523 15 13 15.4477 13 16Z" fill="currentColor"></path>
+                                            <path d="M17 16C17 16.5523 16.5523 17 16 17C15.4477 17 15 16.5523 15 16C15 15.4477 15.4477 15 16 15C16.5523 15 17 15.4477 17 16Z" fill="currentColor"></path>
+                                        </g>
+                                    </svg>
+                                    Lock Screen
+                                </a>
+                            </li>
+                            <li class="hover">
+                                <a href="javascript: void(0);" class="padding flex align-center">
+                                    <svg class="h-4.5 w-4.5 shrink-0 rotate-90 ltr:mr-2 rtl:ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.5" d="M17 9.00195C19.175 9.01406 20.3529 9.11051 21.1213 9.8789C22 10.7576 22 12.1718 22 15.0002V16.0002C22 18.8286 22 20.2429 21.1213 21.1215C20.2426 22.0002 18.8284 22.0002 16 22.0002H8C5.17157 22.0002 3.75736 22.0002 2.87868 21.1215C2 20.2429 2 18.8286 2 16.0002L2 15.0002C2 12.1718 2 10.7576 2.87868 9.87889C3.64706 9.11051 4.82497 9.01406 7 9.00195" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                        <path d="M12 15L12 2M12 2L15 5.5M12 2L9 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                    Sign Out
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </header>
 
             <div class="outer-body">
                 <div class="main-content-body">
-                    <ul class="flex align-center">
+                    <ul class="m-60 flex align-center">
                         <li class="dashbord">
                             <a href="javascript: void(0);">Dashboard</a>
                         </li>
@@ -733,8 +789,8 @@
                         </li>
                     </ul>
                     <div class="charts">
-                        <div class="flex">
-                            <div class="col-8 pl-0">
+                        <div class="flex abc">
+                            <div class="col-xxl-8 col-12 pl-0 m-20">
                                 <div class="revenue-chart">
                                     <div class="chart-heading flex align-center justify-space-beetween">
                                         <h5>Revenue</h5> 
@@ -753,7 +809,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 pr-0">
+                            <div class="col-xxl-4 col-12 pr-0 m-20">
                                 <div class="sales-chart">
                                     <div class="chart-heading flex align-center justify-space-beetween">
                                         <h5>Sales By Category</h5> 
@@ -763,7 +819,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 pl-0">
+                            <div class="col-xxl-4 col-12 pl-0 m-20">
                                 <div class="daily-sales-chart">
                                     <div class="sales-dsc chart-heading flex align-center justify-space-beetween">
                                         <div>
@@ -782,7 +838,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-xxl-4 col-lg-6 col-12 m-20">
                                 <div class="summary-card"> 
                                     <div class="chart-heading flex align-center justify-space-beetween">
                                         <h5>Summary</h5> 
@@ -804,7 +860,7 @@
                                             </div>
                                             <div class="col-10 pl-0 pr-0">
                                                 <div>
-                                                    <div class="flex align-center justify-space-beetween">
+                                                    <div class="income-history flex align-center justify-space-beetween">
                                                         <h6>Income</h6>
                                                         <p>$92,600</p>
                                                     </div>
@@ -813,11 +869,52 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="profit-summary pl-0 pr-0">
+                                                <div class="profit-data flex align-center justify-center">
+                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.72848 16.1369C3.18295 14.5914 2.41018 13.8186 2.12264 12.816C1.83509 11.8134 2.08083 10.7485 2.57231 8.61875L2.85574 7.39057C3.26922 5.59881 3.47597 4.70292 4.08944 4.08944C4.70292 3.47597 5.59881 3.26922 7.39057 2.85574L8.61875 2.57231C10.7485 2.08083 11.8134 1.83509 12.816 2.12264C13.8186 2.41018 14.5914 3.18295 16.1369 4.72848L17.9665 6.55812C20.6555 9.24711 22 10.5916 22 12.2623C22 13.933 20.6555 15.2775 17.9665 17.9665C15.2775 20.6555 13.933 22 12.2623 22C10.5916 22 9.24711 20.6555 6.55812 17.9665L4.72848 16.1369Z" stroke="currentColor" stroke-width="1.5"></path>
+                                                        <circle opacity="0.5" cx="8.60699" cy="8.87891" r="2" transform="rotate(-45 8.60699 8.87891)" stroke="currentColor" stroke-width="1.5"></circle>
+                                                        <path opacity="0.5" d="M11.5417 18.5L18.5208 11.5208" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 pl-0 pr-0">
+                                                <div>
+                                                    <div class="income-history flex align-center justify-space-beetween">
+                                                        <h6>Profit</h6>
+                                                        <p>$37,515</p>
+                                                    </div>
+                                                    <div class="profit-line">
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pl-0 pr-0">
+                                                <div class="expenses-data flex align-center justify-center">
+                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12Z" stroke="currentColor" stroke-width="1.5"></path>
+                                                        <path opacity="0.5" d="M10 16H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                        <path opacity="0.5" d="M14 16H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                        <path opacity="0.5" d="M2 10L22 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 pl-0 pr-0">
+                                                <div>
+                                                    <div class="income-history flex align-center justify-space-beetween">
+                                                        <h6>Expenses</h6>
+                                                        <p>$55,085</p>
+                                                    </div>
+                                                    <div class="expenses-line">
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 pr-0">
+                            <div class="col-xxl-4 col-lg-6 col-12 pr-0 m-20">
                                 <div class="order-chart">
                                     <div class="chart-heading flex align-center justify-space-beetween">
                                         <div class="cart-icon flex align-center justify-center">
@@ -831,6 +928,581 @@
                                     <div>
                                         <div id="chart3"></div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-12 pl-0 m-20">
+                                <div class="recent-activities">
+                                    <h5>Recent Activities</h5>
+                                    <div class="m-8 flex align-center">
+                                        <div class="blue-dot"></div>
+                                        <div class="recent-activities-info flex align-center justify-space-beetween w-10">
+                                            <h6>Updated Server Logs</h6>
+                                            <div>
+                                                <p class="effect">Pending</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-8 flex align-center">
+                                        <div class="green-dot"></div>
+                                        <div class="recent-activities-info flex align-center justify-space-beetween w-10">
+                                            <h6>Send Mail to HR and Admin</h6>
+                                            <div>
+                                                <p class="effect effect1">Completed</p>
+                                                <span>2 Min Ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-8 flex align-center">
+                                        <div class="red-dot"></div>
+                                        <div class="recent-activities-info flex align-center justify-space-beetween w-10">
+                                            <h6>Backup Files EOD</h6>
+                                            <div>
+                                                <p class="effect effect2">Pending</p>
+                                                <span>14:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-8 flex align-center">
+                                        <div class="black-dot"></div>
+                                        <div class="recent-activities-info flex align-center justify-space-beetween w-10">
+                                            <h6>Collect documents from Sara</h6>
+                                            <div>
+                                                <p class="effect effect3">Completed</p>
+                                                <span>16:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-8 flex align-center">
+                                        <div class="yellow-dot"></div>
+                                        <div class="recent-activities-info flex align-center justify-space-beetween w-10">
+                                            <h6>Conference call with Marketing Manager.</h6>
+                                            <div>
+                                                <p class="effect effect4">In Process</p>
+                                                <span>17:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-8 flex align-center">
+                                        <div class="blue-dot"></div>
+                                        <div class="recent-activities-info flex align-center justify-space-beetween w-10">
+                                            <h6>Rebooted Server</h6>
+                                            <div>
+                                                <p class="effect effect5">Completed</p>
+                                                <span>17:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-8 flex align-center">
+                                        <div class="purple-dot"></div>
+                                        <div class="recent-activities-info flex align-center justify-space-beetween w-10">
+                                            <h6>Send contract details to Freelancer</h6>
+                                            <div>
+                                                <p class="effect effect6">Pending</p>
+                                                <span>18:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-8 flex align-center">
+                                        <div class="blue-dot"></div>
+                                        <div class="recent-activities-info flex align-center justify-space-beetween w-10">
+                                            <h6>Updated Server Logs</h6>
+                                            <div>
+                                                <p class="effect effect7">Pending</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-8 flex align-center">
+                                        <div class="green-dot"></div>
+                                        <div class="recent-activities-info flex align-center justify-space-beetween w-10">
+                                            <h6>Send Mail to HR and Admin</h6>
+                                            <div>
+                                                <p class="effect effect8">Completed</p>
+                                                <span>2 Min Ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal-line"></div>
+                                    <div class="view-more">
+                                        <a href="javascript: void(0);">View All</a>
+                                        <i class="ri-arrow-right-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-12 m-20">
+                                <div class="summary-card transactions"> 
+                                    <div class="chart-heading flex align-center justify-space-beetween">
+                                        <h5>Summary</h5> 
+                                        <svg class="dots h-5 w-5 text-black/70 hover:!text-primary dark:text-white/70" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="5" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
+                                            <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
+                                            <circle cx="19" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="m-20 flex align-center">
+                                        <div class="transactions-box">
+                                            <span>SP</span>
+                                        </div>
+                                        <div class="transactions-name">
+                                            <div>Shaun Park</div>
+                                            <div>10 Jan 1:00PM</div>
+                                        </div>
+                                        <span class="profit">+$36.11</span>
+                                    </div>
+                                    <div class="m-20 flex align-center">
+                                        <div class="transactions-box-yellow transactions-box">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6">
+                                                <path d="M2 10C2 7.17157 2 5.75736 2.87868 4.87868C3.75736 4 5.17157 4 8 4H13C15.8284 4 17.2426 4 18.1213 4.87868C19 5.75736 19 7.17157 19 10C19 12.8284 19 14.2426 18.1213 15.1213C17.2426 16 15.8284 16 13 16H8C5.17157 16 3.75736 16 2.87868 15.1213C2 14.2426 2 12.8284 2 10Z" stroke="currentColor" stroke-width="1.5"></path>
+                                                <path opacity="0.5" d="M19.0003 7.07617C19.9754 7.17208 20.6317 7.38885 21.1216 7.87873C22.0003 8.75741 22.0003 10.1716 22.0003 13.0001C22.0003 15.8285 22.0003 17.2427 21.1216 18.1214C20.2429 19.0001 18.8287 19.0001 16.0003 19.0001H11.0003C8.17187 19.0001 6.75766 19.0001 5.87898 18.1214C5.38909 17.6315 5.17233 16.9751 5.07642 16" stroke="currentColor" stroke-width="1.5"></path>
+                                                <path d="M13 10C13 11.3807 11.8807 12.5 10.5 12.5C9.11929 12.5 8 11.3807 8 10C8 8.61929 9.11929 7.5 10.5 7.5C11.8807 7.5 13 8.61929 13 10Z" stroke="currentColor" stroke-width="1.5"></path>
+                                                <path opacity="0.5" d="M16 12L16 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                <path opacity="0.5" d="M5 12L5 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="transactions-name">
+                                            <div>Cash withdrawal</div>
+                                            <div>04 Jan 1:00PM</div>
+                                        </div>
+                                        <span class="lose-color">-$16.44</span>
+                                    </div>
+                                    <div class="m-20 flex align-center">
+                                        <div class="transactions-box transactions-box-red">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="6" r="4" stroke="currentColor" stroke-width="1.5"></circle>
+                                                <path opacity="0.5" d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="currentColor" stroke-width="1.5"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="transactions-name">
+                                            <div>Amy Diaz</div>
+                                            <div>10 Jan 1:00PM</div>
+                                        </div>
+                                        <span class="profit">+$66.44</span>
+                                    </div>
+                                    <div class="m-20 flex align-center">
+                                        <div class="transactions-box-purple transactions-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                                <path fill="currentColor" d="M5.398 0v.006c3.028 8.556 5.37 15.175 8.348 23.596c2.344.058 4.85.398 4.854.398c-2.8-7.924-5.923-16.747-8.487-24zm8.489 0v9.63L18.6 22.951c-.043-7.86-.004-15.913.002-22.95zM5.398 1.05V24c1.873-.225 2.81-.312 4.715-.398v-9.22z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="transactions-name">
+                                            <div>Netflix</div>
+                                            <div>04 Jan 1:00PM</div>
+                                        </div>
+                                        <span class="lose-color">-$32.00</span>
+                                    </div>
+                                    <div class="m-20 flex align-center">
+                                        <div class="transactions-box transactions-box-blue">
+                                            <span>DA</span>
+                                        </div>
+                                        <div class="transactions-name">
+                                            <div>Daisy Anderson</div>
+                                            <div>10 Jan 1:00PM</div>
+                                        </div>
+                                        <span class="profit">+$10.08</span>
+                                    </div>
+                                    <div class="flex align-center">
+                                        <div class="transactions-box-yellow transactions-box">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.926 9.70541C13.5474 9.33386 13.5474 8.74151 13.5474 7.55682V7.24712C13.5474 3.96249 13.5474 2.32018 12.6241 2.03721C11.7007 1.75425 10.711 3.09327 8.73167 5.77133L5.66953 9.91436C4.3848 11.6526 3.74244 12.5217 4.09639 13.205C4.10225 13.2164 4.10829 13.2276 4.1145 13.2387C4.48945 13.9117 5.59888 13.9117 7.81775 13.9117C9.05079 13.9117 9.6673 13.9117 10.054 14.2754" stroke="currentColor" stroke-width="1.5"></path>
+                                                <path opacity="0.5" d="M13.9259 9.70557L13.9459 9.72481C14.3326 10.0885 14.9492 10.0885 16.1822 10.0885C18.4011 10.0885 19.5105 10.0885 19.8854 10.7615C19.8917 10.7726 19.8977 10.7838 19.9036 10.7951C20.2575 11.4785 19.6151 12.3476 18.3304 14.0858L15.2682 18.2288C13.2888 20.9069 12.2991 22.2459 11.3758 21.9629C10.4524 21.68 10.4524 20.0376 10.4525 16.753L10.4525 16.4434C10.4525 15.2587 10.4525 14.6663 10.074 14.2948L10.054 14.2755" stroke="currentColor" stroke-width="1.5"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="transactions-name">
+                                            <div>Electricity Bill</div>
+                                            <div>04 Jan 1:00PM</div>
+                                        </div>
+                                        <span class="lose-color">-$22.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-12 pr-0 m-20">
+                                <div class="shadow radius">
+                                    <div class="profile-section">
+                                        <div class="flex justify-space-beetween">
+                                            <div class="profile-section-logo">
+                                                <img src="./assets/images/profile-logo.jpeg" alt="profile" width="32px" height="32px">
+                                                Alan Green
+                                            </div>
+                                            <button>
+                                                <svg class="m-auto h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="profile-info flex justify-space-beetween align-center">
+                                            <p>Wallet Balance</p>
+                                            <h5>$2953</h5>
+                                        </div>
+                                    </div>
+                                    <div class="statistic flex align-center gap-10">
+                                        <div>
+                                            <span class="flex justify-space-beetween align-center">
+                                                Received
+                                                <svg class="green h-4 w-4 text-success" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19 15L12 9L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <div>   
+                                                $97.99
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="flex justify-space-beetween align-center">
+                                                Spent
+                                                <svg class="red h-4 w-4 text-danger" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19 9L12 15L5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                            <div>   
+                                                $53.00
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="statistic-info">
+                                        <div>
+                                            <span>
+                                                <i class="ri-circle-fill"></i>
+                                                Pending
+                                            </span>
+                                        </div>
+                                        <div class="m-8 flex justify-space-beetween align-center">
+                                            <p>Netflix</p>
+                                            <p>$ 13.85</p>
+                                        </div>
+                                        <div class="m-20 flex justify-space-beetween align-center">
+                                            <p>BlueHost VPN</p>
+                                            <p>$ 15.66</p>
+                                        </div>
+                                        <div>
+                                            <button class="bg-purple">View Details</button>
+                                            <button class="bg-green">Pay Now $29.51</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-12 pl-0">
+                                <div class="order-selling">
+                                    <div class="recent-orders m-20">
+                                        <h5>Recent Orders</h5>
+                                    </div>
+                                    <div class="overflow">
+                                        <div class="order-heading flex align-center">
+                                            <div class="col-4">
+                                                <div>Customer</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div>Product</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div>Invoice</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div>Price</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div>Status</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-data flex align-center">
+                                            <div class="col-4">
+                                                <div class="logo-name flex align-center">
+                                                    <img src="./assets/images/img-1.jpeg" alt="profile" width="32px" height="32px">
+                                                    Luke Lvory
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="blue">Headphone</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">#46894</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$56.07</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="paid">
+                                                    <span>Paid</span>
+                                                </div>
+                                            </div>
+                                            <div class="horizontal-lines"></div>
+                                        </div>
+                                        <div class="order-data flex align-center">
+                                            <div class="col-4">
+                                                <div class="logo-name flex align-center">
+                                                    <img src="./assets/images/img-2.jpeg" alt="profile" width="32px" height="32px">
+                                                    Luerie Fox
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="yellow">Sunglasses</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">#66894</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$56.07</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="paid purple">
+                                                    <span>Shipped</span>
+                                                </div>
+                                            </div>
+                                            <div class="horizontal-lines"></div>
+                                        </div>
+                                        <div class="order-data flex align-center">
+                                            <div class="col-4">
+                                                <div class="logo-name flex align-center">
+                                                    <img src="./assets/images/img-3.jpeg" alt="profile" width="32px" height="32px">
+                                                    Ryan Collins
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="red">Sport</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">#75844</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$110.00</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="paid">
+                                                    <span>Paid</span>
+                                                </div>
+                                            </div>
+                                            <div class="horizontal-lines"></div>
+                                        </div>
+                                        <div class="order-data flex align-center">
+                                            <div class="col-4">
+                                                <div class="logo-name flex align-center">
+                                                    <img src="./assets/images/img-4.jpeg" alt="profile" width="32px" height="32px">
+                                                    Irene Collins
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="purple">Speakers</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">#46894</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$56.07</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="paid purple">
+                                                    <span>Shipped</span>
+                                                </div>
+                                            </div>
+                                            <div class="horizontal-lines"></div>
+                                        </div>
+                                        <div class="order-data flex align-center">
+                                            <div class="col-4">
+                                                <div class="logo-name flex align-center">
+                                                    <img src="./assets/images/img-5.jpeg" alt="profile" width="32px" height="32px">
+                                                    Andy King
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="blue">Sport</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">#76894</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$126.04</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="paid">
+                                                    <span>Paid</span>
+                                                </div>
+                                            </div>
+                                            <div class="horizontal-lines"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-12 pr-0">
+                                <div class="order-selling">
+                                    <div class="recent-orders m-20">
+                                        <h5>Top Selling Product</h5>
+                                    </div>
+                                    <div class="overflow">
+                                        <div class="order-heading flex align-center">
+                                            <div class="col-4">
+                                                <div>Product</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div>Price</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div>Discount</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div>Sold</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div>Source</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-data flex align-center">
+                                            <div class="col-4">
+                                                <div class="logo-name flex align-center">
+                                                    <img src="./assets/images/p1.jpeg" alt="profile" width="32px" height="32px">
+                                                    
+                                                    <div class="">
+                                                        <div>Headphone</div>
+                                                        <div class="blue">Digital</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$168.09</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$60.09</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">170</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="direct flex align-center red">
+                                                    <svg class="h-3.5 w-3.5 ltr:mr-1 rtl:ml-1 rtl:rotate-180" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.6644 5.47875L16.6367 9.00968C18.2053 10.404 18.9896 11.1012 18.9896 11.9993C18.9896 12.8975 18.2053 13.5946 16.6367 14.989L12.6644 18.5199C11.9484 19.1563 11.5903 19.4746 11.2952 19.342C11 19.2095 11 18.7305 11 17.7725V15.4279C7.4 15.4279 3.5 17.1422 2 19.9993C2 10.8565 7.33333 8.57075 11 8.57075V6.22616C11 5.26817 11 4.78917 11.2952 4.65662C11.5903 4.52407 11.9484 4.8423 12.6644 5.47875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path opacity="0.5" d="M15.5386 4.5L20.7548 9.34362C21.5489 10.081 22.0001 11.1158 22.0001 12.1994C22.0001 13.3418 21.4989 14.4266 20.629 15.1671L15.5386 19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                    </svg>
+                                                    <a href="javascript: void(0);" class="red">Direct</a>
+                                                </div>
+                                            </div>
+                                            <div class="horizontal-lines"></div>
+                                        </div>
+                                        <div class="product-data flex align-center">
+                                            <div class="col-4">
+                                                <div class="logo-name flex align-center">
+                                                    <img src="./assets/images/p2.jpeg" alt="profile" width="32px" height="32px">
+                                                    
+                                                    <div class="">
+                                                        <div>Shoes</div>
+                                                        <div class="yellow">Faishon</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$126.04</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$47.09</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">130</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="direct flex align-center green">
+                                                    <svg class="h-3.5 w-3.5 ltr:mr-1 rtl:ml-1 rtl:rotate-180" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.6644 5.47875L16.6367 9.00968C18.2053 10.404 18.9896 11.1012 18.9896 11.9993C18.9896 12.8975 18.2053 13.5946 16.6367 14.989L12.6644 18.5199C11.9484 19.1563 11.5903 19.4746 11.2952 19.342C11 19.2095 11 18.7305 11 17.7725V15.4279C7.4 15.4279 3.5 17.1422 2 19.9993C2 10.8565 7.33333 8.57075 11 8.57075V6.22616C11 5.26817 11 4.78917 11.2952 4.65662C11.5903 4.52407 11.9484 4.8423 12.6644 5.47875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path opacity="0.5" d="M15.5386 4.5L20.7548 9.34362C21.5489 10.081 22.0001 11.1158 22.0001 12.1994C22.0001 13.3418 21.4989 14.4266 20.629 15.1671L15.5386 19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                    </svg>
+                                                    <a href="javascript: void(0);" class="green">Google</a>
+                                                </div>
+                                            </div>
+                                            <div class="horizontal-lines"></div>
+                                        </div>
+                                        <div class="product-data flex align-center">
+                                            <div class="col-4">
+                                                <div class="logo-name flex align-center">
+                                                    <img src="./assets/images/p3.jpeg" alt="profile" width="32px" height="32px">
+                                                    
+                                                    <div class="">
+                                                        <div>Watch</div>
+                                                        <div class="red">Accessories</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$56.097</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$20.00</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">66</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="direct flex align-center yellow">
+                                                    <svg class="h-3.5 w-3.5 ltr:mr-1 rtl:ml-1 rtl:rotate-180" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.6644 5.47875L16.6367 9.00968C18.2053 10.404 18.9896 11.1012 18.9896 11.9993C18.9896 12.8975 18.2053 13.5946 16.6367 14.989L12.6644 18.5199C11.9484 19.1563 11.5903 19.4746 11.2952 19.342C11 19.2095 11 18.7305 11 17.7725V15.4279C7.4 15.4279 3.5 17.1422 2 19.9993C2 10.8565 7.33333 8.57075 11 8.57075V6.22616C11 5.26817 11 4.78917 11.2952 4.65662C11.5903 4.52407 11.9484 4.8423 12.6644 5.47875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path opacity="0.5" d="M15.5386 4.5L20.7548 9.34362C21.5489 10.081 22.0001 11.1158 22.0001 12.1994C22.0001 13.3418 21.4989 14.4266 20.629 15.1671L15.5386 19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                    </svg>
+                                                    <a href="javascript: void(0);" class="yellow">Ads</a>
+                                                </div>
+                                            </div>
+                                            <div class="horizontal-lines"></div>
+                                        </div>
+                                        <div class="product-data flex align-center">
+                                            <div class="col-4">
+                                                <div class="logo-name flex align-center">
+                                                    <img src="./assets/images/p4.jpeg" alt="profile" width="32px" height="32px">
+                                                    
+                                                    <div class="">
+                                                        <div>Laptop</div>
+                                                        <div class="blue">Digital</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$110.00</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$33.00</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">35</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="direct flex align-center purple">
+                                                    <svg class="h-3.5 w-3.5 ltr:mr-1 rtl:ml-1 rtl:rotate-180" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.6644 5.47875L16.6367 9.00968C18.2053 10.404 18.9896 11.1012 18.9896 11.9993C18.9896 12.8975 18.2053 13.5946 16.6367 14.989L12.6644 18.5199C11.9484 19.1563 11.5903 19.4746 11.2952 19.342C11 19.2095 11 18.7305 11 17.7725V15.4279C7.4 15.4279 3.5 17.1422 2 19.9993C2 10.8565 7.33333 8.57075 11 8.57075V6.22616C11 5.26817 11 4.78917 11.2952 4.65662C11.5903 4.52407 11.9484 4.8423 12.6644 5.47875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path opacity="0.5" d="M15.5386 4.5L20.7548 9.34362C21.5489 10.081 22.0001 11.1158 22.0001 12.1994C22.0001 13.3418 21.4989 14.4266 20.629 15.1671L15.5386 19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                    </svg>
+                                                    <a href="javascript: void(0);" class="purple">Email</a>
+                                                </div>
+                                            </div>
+                                            <div class="horizontal-lines"></div>
+                                        </div>
+                                        <div class="product-data flex align-center">
+                                            <div class="col-4">
+                                                <div class="logo-name flex align-center">
+                                                    <img src="./assets/images/p5.jpeg" alt="profile" width="32px" height="32px">
+                                                    
+                                                    <div class="">
+                                                        <div>Camera</div>
+                                                        <div class="blue">Digital</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$56.07</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">$26.04</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="grey">30</div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="direct flex align-center blue">
+                                                    <svg class="h-3.5 w-3.5 ltr:mr-1 rtl:ml-1 rtl:rotate-180" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.6644 5.47875L16.6367 9.00968C18.2053 10.404 18.9896 11.1012 18.9896 11.9993C18.9896 12.8975 18.2053 13.5946 16.6367 14.989L12.6644 18.5199C11.9484 19.1563 11.5903 19.4746 11.2952 19.342C11 19.2095 11 18.7305 11 17.7725V15.4279C7.4 15.4279 3.5 17.1422 2 19.9993C2 10.8565 7.33333 8.57075 11 8.57075V6.22616C11 5.26817 11 4.78917 11.2952 4.65662C11.5903 4.52407 11.9484 4.8423 12.6644 5.47875Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path opacity="0.5" d="M15.5386 4.5L20.7548 9.34362C21.5489 10.081 22.0001 11.1158 22.0001 12.1994C22.0001 13.3418 21.4989 14.4266 20.629 15.1671L15.5386 19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                    </svg>
+                                                    <a href="javascript: void(0);" class="blue">referral</a>
+                                                </div>
+                                            </div>
+                                            <div class="horizontal-lines"></div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -853,13 +1525,18 @@
                 $("aside").addClass("left-260")
                 $(".main-content").removeClass("ml-260")
                 $(".main-logo").removeClass("display-none")
+                $("header").addClass("w-100")
             })
             $(".main-icon").on("click", function () {
                 $("aside").removeClass("left-260")
                 $(".main-content").addClass("ml-260")
                 $(".main-logo").addClass("display-none")
+                $("header").removeClass("w-100")
             })
-            $(".rounded-logo .ri-sun-line").on("click", function () {
+            $(".profile-icon").on("click", function () {
+                $(".grop-down").toggleClass("display-none")
+            })
+            $(".rounded-logo.sun").on("click", function () {
                 $(".rounded-logo i").toggleClass("ri-sun-line ri-moon-line")
                 $("body").toggleClass("blck-theme")
             })
@@ -875,8 +1552,7 @@
                 $rotated = $(this).children(".arrow")
                 $(".arrow").not($rotated).removeClass("rotate")
                 $rotated.toggleClass("rotate")
-            })
-            
+            })    
         })
     </script>
 

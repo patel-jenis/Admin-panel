@@ -7,7 +7,7 @@ var options3 = {
         },
     ],
     chart: {
-        height: 290,
+        height: 150,
         type: 'area',
         fontFamily: 'Nunito, sans-serif',
         sparkline: {
@@ -26,7 +26,7 @@ var options3 = {
     },
     grid: {
         padding: {
-            top: 125,
+            top: 30,
             right: 0,
             bottom: 0,
             left: 0,
