@@ -54,7 +54,7 @@
     .col-xl-11 {width: 91.66%;}
     .col-xl-12 {width: 100%;}
 }
-@media (min-width:1320px) {
+@media (min-width:1500px) {
     .col-xxl-1 {width: 8.33%;}
     .col-xxl-2 {width: 16.66%;}
     .col-xxl-3 {width: 25%;}
@@ -70,40 +70,16 @@
 }
 
 @media (max-width:1320px) {
-    .abc div:nth-child(2) {
-        padding: 0 0;
+    .pl-0 {
+        padding-left: 15px;
+    }
+    .pr-0 {
         padding-right: 15px;
     }
-    .abc div:nth-child(4) {
-        padding: 0 0;
-        padding-right: 15px;
-    }
-    .abc div:nth-child(5) {
-        padding: 0 0;
-        padding-right: 15px;
-    }
-    .abc div:nth-child(7) {
-        padding: 0 0;
-        padding-right: 15px;
-    }
-    .abc div:nth-child(8) {
-        padding: 0 0;
-        padding-right: 15px;
-    }
-    .abc div:nth-child(9) {
-        padding: 0 0;
-        padding-right: 15px;
-    }
-    .abc div:nth-child(10) {
-        padding: 0 0;
-        padding-right: 15px;
-    }
-    .statistic {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .overflow {
+
+    .order-selling {
         overflow-x: auto;
+        width: 100%;
     }
 }
 
@@ -120,17 +96,22 @@
     
 }
 
-@media (max-width:700px) {
+@media (max-width:850px) {
     header div div:last-child{
         display: none;
     }
     header div div:first-child{
         display: flex;
     }
-    
+    .statistic {
+        padding: 5px;
+    }
+    .menus-icon {
+        display: inline-block;
+    }
 }
 
-@media (max-width:370px) {
+@media (max-width:450px) {
     header div:last-child{
         display: none;
     }

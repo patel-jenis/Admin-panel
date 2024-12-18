@@ -314,6 +314,10 @@ aside {
     left: -260px;
 }
 
+.l-260 {
+    left: 260px;
+}
+
 .display-none {
     display: none;
 }
@@ -1161,13 +1165,14 @@ header {
  
 .order-selling {
     padding: 1.25rem;
+    padding-bottom: 0;
     border-radius: 5px;
     margin-bottom: 20px;
     background-color: var(--color-header-bg);
     --tw-shadow: 5px 0 25px 0 #5e5c9a1a;
     --tw-shadow-colored: 5px 0 25px 0 var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    height: auto;
+    height: 100%;
 }
 
 .recent-orders h5 {
@@ -1261,33 +1266,8 @@ header {
     color: #805dca;
 }
 
-.horizontal-lines {
-    width: 100%;
-    height: 1px;
-    background-color: var(--horizontal-line);
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 10px;
-}
-
 .grey {
     color: var(--color-lightgrey);
-}
-
-.order-data:hover .grey {
-    color: var(--color-primary);
-}
-
-.product-data:hover .grey {
-    color: var(--color-primary);
-}
-
-.order-data:hover .paid.purple span {
-    background-color: var(--purple-black);
-}
-
-.order-data:hover .paid span {
-    background-color: var(--green-black);
 }
 
 .direct svg {
@@ -1365,4 +1345,95 @@ header {
 
 .grop-down li:first-child div a:hover {
     color: var(--blue-white); 
+}
+
+
+.name h4 {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.name a {
+    font-size: 14px;
+    color: var(--color-lightgrey);
+}
+
+.padding {
+    padding: .5rem 1rem;
+    color: var(--color-lightgrey);
+}
+
+.padding svg {
+    margin-right: 10px;
+}
+
+.grop-down li:last-child a {
+    color: #e7515a;
+    border-top: 1px solid #e5e7eb;
+}
+
+.grop-down li:last-child a svg{
+    transform: rotate(90deg);
+}
+
+.hover:hover a{
+    color: var(--blue-white);
+    background-color: var(--bg-color);
+}
+
+.grop-down li:first-child div a:hover {
+    color: var(--blue-white); 
+}
+
+.padding-bg > td {
+    padding: 15px 16px;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+
+.padding-bg > td > img {
+    border-radius: 5px;
+}
+
+.name > h4{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.name > span{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.bg-grey{
+    background-color: var(--bg-line);
+    border-radius: 5px;
+}
+
+.bg-grey > td {
+    font-size: 14px;
+}
+
+.direct > svg {
+    width: 18px;
+    height: 18px;
+}
+
+.direct span {
+    font-size: 14px;
+}
+
+.padding-bg:hover .grey {
+    color: var(--color-primary);
+}
+
+.w-36 {
+    width: calc(100% - 48px);
+}
+
+.menus-icon i {
+    font-size: 20px;
 }
