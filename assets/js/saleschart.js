@@ -3,7 +3,7 @@ var options1 = {
     series: [285, 237, 270, 100, 100],
     chart: {
         type: 'donut',
-        height: 460,
+        height: 400,
         fontFamily: 'Nunito, sans-serif',
     },
     dataLabels: {

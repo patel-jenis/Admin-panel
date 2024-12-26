@@ -13,7 +13,7 @@ var options = {
         },
     ],
     chart: {
-        height: 325,
+        height: 300,
         type: 'area',
         fontFamily: 'Nunito, sans-serif',
         zoom: {

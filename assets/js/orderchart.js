@@ -7,7 +7,7 @@ var options3 = {
         },
     ],
     chart: {
-        height: 150,
+        height: 200,
         type: 'area',
         fontFamily: 'Nunito, sans-serif',
         sparkline: {
